@@ -21,7 +21,7 @@
   }
 
   function attemptPageUpdate() {
-    const keywords = ['\u66f4\u65b0', '\u8868\u793a', '\u518d\u8aad', 'Reload', 'Update', '\u30dd\u30b9\u30c8'];
+    const keywords = ['更新', '表示', '再読', 'Reload', 'Update', 'ポスト'];
     const buttons = document.querySelectorAll('button, div[role="button"], a[role="button"]');
     for (const b of buttons) {
       const text = (b.innerText || '') + ' ' + (b.getAttribute('aria-label') || '');

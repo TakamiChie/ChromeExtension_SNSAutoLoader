@@ -2,11 +2,16 @@
   "manifest_version": 3,
   "name": "SNS Auto Loader",
   "version": "1.0",
-  "description": "X\u306e\u30da\u30fc\u30b8\u3092\u81ea\u52d5\u30ea\u30ed\u30fc\u30c9\u3059\u308b\u62e1\u5f35",
+  "description": "Xのページを自動リロードする拡張",
   "content_scripts": [
     {
-      "matches": ["https://twitter.com/*", "https://x.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ]
