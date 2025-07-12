@@ -1,0 +1,2 @@
+# ChromeExtension_SNSAutoLoader
+SNSに自動リロード機能をつける拡張
