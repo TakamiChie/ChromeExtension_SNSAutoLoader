@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "SNS Auto Loader",
   "version": "1.0",
-  "description": "Xのページを自動リロードする拡張",
+  "description": "SNSに自動リロード機能をつけるChrome拡張",
   "content_scripts": [
     {
       "matches": [

@@ -1,6 +1,6 @@
 # ChromeExtension_SNSAutoLoader
 
-X の Web サイトを表示すると、自動でページを再読み込む Chrome 拡張です。
+SNS に自動リロード機能をつける Chrome 拡張です。
 
 ## 使い方
 
