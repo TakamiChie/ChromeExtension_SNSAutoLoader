@@ -21,11 +21,13 @@
   }
 
   function attemptPageUpdate() {
-    const keywords = ['更新', '表示', '再読', 'Reload', 'Update', 'ポスト'];
+    const keywords = ['件のポストを表示'];
     const buttons = document.querySelectorAll('button, div[role="button"], a[role="button"]');
     for (const b of buttons) {
       const text = (b.innerText || '') + ' ' + (b.getAttribute('aria-label') || '');
-      if (keywords.some(k => text.includes(k))) {
+      const style = window.getComputedStyle(b);
+      const visible = style.display !== 'none' && style.visibility !== 'hidden' && b.offsetParent !== null;
+      if (visible && keywords.some(k => text.includes(k))) {
         b.click();
         return;
       }
